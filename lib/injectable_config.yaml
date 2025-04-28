@@ -1,0 +1,7 @@
+targets:
+  $default:
+    builders:
+      injectable_generator:
+        generate_for:
+          include:
+            - lib/**.dart
