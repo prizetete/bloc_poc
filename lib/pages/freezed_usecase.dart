@@ -1,7 +1,3 @@
-import 'package:bloc_poc/models/freezed/login_state.dart';
-import 'package:bloc_poc/models/freezed/person.dart';
-import 'package:bloc_poc/models/freezed/response_generic_type.dart';
-
 void main() {
   // // ---------------- 1 ---------------- Immutable
   // // Freezed สร้างคลาสที่เป็น Immutable โดยอัตโนมัติ
