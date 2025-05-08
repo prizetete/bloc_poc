@@ -9,4 +9,5 @@ class RouteName {
   static const String pai = "/pai";
   static const String user = "/user";
   static const String userX = "/userX";
+  static const String widgetTest = "/widgetTest";
 }

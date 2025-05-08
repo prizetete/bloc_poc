@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, RouteName.bee);
               },
-              child: const CustomText("Bee", color: Colors.teal),
+              child: const CustomText("Bee", color: Colors.lightGreen),
             ),
             SizedBox(height: 20),
             ElevatedButton(
@@ -44,14 +44,21 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, RouteName.user);
               },
-              child: const CustomText("User", color: Colors.amber),
+              child: const CustomText("User", color: Colors.blueAccent),
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, RouteName.userX);
               },
-              child: const CustomText("UserX", color: Colors.amber),
+              child: const CustomText("UserX", color: Colors.purple),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, RouteName.widgetTest);
+              },
+              child: const CustomText("WidgetTest", color: Colors.orange),
             ),
           ],
         ),

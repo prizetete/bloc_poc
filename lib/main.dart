@@ -4,6 +4,7 @@ import 'package:bloc_poc/bloc/pai_cubit.dart';
 import 'package:bloc_poc/bloc/simple_cubit.dart';
 import 'package:bloc_poc/bloc/user/user_bloc.dart';
 import 'package:bloc_poc/locator.dart';
+import 'package:bloc_poc/pages/counter_widget_screen.dart';
 import 'package:bloc_poc/pages/user_x_page.dart';
 import 'package:bloc_poc/repository/user_repository.dart';
 import 'package:bloc_poc/pages/advanced_screen.dart';
@@ -72,6 +73,16 @@ class MyApp extends StatelessWidget {
                         (context) =>
                             UserBloc(UserRepository())..add(FetchUser()),
                     child: UserXPage(),
+                  ),
+            );
+          case RouteName.widgetTest:
+            return MaterialPageRoute(
+              builder:
+                  (context) => BlocProvider(
+                    create:
+                        (context) =>
+                            UserBloc(UserRepository())..add(FetchUser()),
+                    child: CounterWidget(),
                   ),
             );
         }

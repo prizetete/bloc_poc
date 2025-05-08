@@ -40,7 +40,14 @@ dependencies:
   get_it: ^8.0.3
   get: ^4.7.2
   injectable: ^2.5.0
-
+  mockito: ^5.4.0
+  build_runner: ^2.4.6
+  bloc_test: ^10.0.0
+  freezed_annotation: ^2.0.3
+  freezed: ^2.0.3
+  json_annotation: ^4.8.1
+  json_serializable: ^6.5.4
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
